@@ -12,7 +12,7 @@ import java.util.*;
 import java.io.*;
 /**
  * @author XOShu4
- *         classe che si occupa dell' interfacciamento tra Client e MsgBox.
+ *         Classe che si occupa dell' interfacciamento tra Client e MsgBox.
  *         gestisce la prima parte dei sign in dei Client
  *         prende in input i comandi del Client.
  *         trasferisce i messaggi alla MsgBox.
@@ -21,16 +21,16 @@ import java.io.*;
 
 public class ServerThread extends Thread {
     /**
-     * porta ed indirizzo della connessione tra client e server
+     * Porta ed indirizzo della connessione tra client e server
      */
     Socket s = null;
     /**
-     * istanza di MsgBox passata dalla classe Server.
+     * Istanza di MsgBox passata dalla classe Server.
      * contiene tutti i metodi per inserire e leggere i messaggi.
      */
     MsgBox msgBox;
     /**
-     * contiene tutti gli utenti e le rispettive PubKey nel formato ->
+     * Contiene tutti gli utenti e le rispettive PubKey nel formato ->
      * "utente:PubKey"
      */
     static ArrayList<String> PubKey;
